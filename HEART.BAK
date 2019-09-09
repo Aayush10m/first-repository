@@ -1,0 +1,45 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+int n,no,i,j,k,l=0,m;
+cout<<"Enter the no. of lines you want in upper part:";
+cin>>no;
+n=no;
+for(n;n>0;n--)
+{
+ for(i=1;i<=n;i++)
+ {
+ cout<<" ";
+ }
+ for(k=1;k<=3+l;k++)
+ {
+ cout<<"*";
+ }
+ for(j=1;j<=n*2;j++)
+ {
+ cout<<" ";
+ }
+ for(m=1;m<=3+l;m++)
+ {
+ cout<<"*";
+ }
+ l=l+2;
+ cout<<"\n";
+}
+l=0;
+for(i=(no*4)+6;i>=3;i--)
+{
+ l=l+2;
+ for(k=(no*2)+2;k>=(no*2)+2-l;k++)
+ {
+ cout<<" ";
+ }
+ for(j=1;j<=(no*4)+6-l;j++)
+ {
+ cout<<"*";
+ }
+}
+getch();
+}
